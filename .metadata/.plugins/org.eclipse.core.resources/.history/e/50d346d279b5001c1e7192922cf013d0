@@ -7,19 +7,15 @@ A partir de esta interfaz, realizar las 4 operaciones basicas que podemos hacer 
 Para todos los casos deberemos usar las funciones lambda.
 
 Opcional: Parametrizar los tipos de numero en la interfaz (double, integer)*/
-	
 
+	interface Interfaz <X>{
+		//Para una funcion lambda el nombre del metodo no importa mucho
+		//pero si importa cuando queramos ejecutar la funcion lambda
+		public X operacion(X a, X b);
+	}
 
 
 public class mainInterfaces {
-	
-	@FunctionalInterface
-	interface Interfaz <T>{
-		//Para una funcion lambda el nombre del metodo no importa mucho
-		//pero si importa cuando queramos ejecutar la funcion lambda
-		public T operacion(T a, T b);
-	}
-	
 	public static void main(String[] args) {
 		
 		Interfaz<Integer> iGenericaInteger = ( n1, n2 ) -> { return n1 + n2; };

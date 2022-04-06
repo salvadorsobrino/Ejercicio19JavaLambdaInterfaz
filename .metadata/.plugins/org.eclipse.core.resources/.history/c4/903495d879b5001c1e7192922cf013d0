@@ -12,14 +12,6 @@ Opcional: Parametrizar los tipos de numero en la interfaz (double, integer)*/
 
 
 public class mainInterfaces {
-	
-	@FunctionalInterface
-	interface Interfaz <T>{
-		//Para una funcion lambda el nombre del metodo no importa mucho
-		//pero si importa cuando queramos ejecutar la funcion lambda
-		public T operacion(T a, T b);
-	}
-	
 	public static void main(String[] args) {
 		
 		Interfaz<Integer> iGenericaInteger = ( n1, n2 ) -> { return n1 + n2; };
